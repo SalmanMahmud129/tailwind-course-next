@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-@layer base {
-    html {
-        @apply bg-slate-600 text-white text-lg font-bold;
+@layer base{
+    html{
+        @apply text-black;
+        font-family: 'Shantell Sans', cursive;
     }
 }

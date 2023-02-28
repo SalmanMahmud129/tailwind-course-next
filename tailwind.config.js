@@ -6,6 +6,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // replaces default sizes from tailwind when placed in them section
+    // fontSize: {
+    //   xs: '12px',
+    //   sm: '15px',
+    //   base: '18px'
+    // },
+
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -41,6 +48,12 @@ module.exports = {
 
       colors: {
         vuejs: "#41f07e"
+      },
+
+      fontSize: {
+        xs: '12px',
+        sm: '15px',
+        base: '18px'
       }
 
     },
