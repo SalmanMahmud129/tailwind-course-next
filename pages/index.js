@@ -7,14 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='whitespace-nowrap'>
-      <p >This is a long sentence with a lot of words to explain that truncate will truncate my sentence</p>
-      {/* <h1 className='text-3xl italic '>Title 1</h1>
-      <h2 className='text-2xl'>Title 2</h2>
-      <h3 className='text-xl'>Title 3</h3>
-      <p className=''>a regular paragraph</p>
-      <p className='text-sm'>A description paragraph</p>
-      <p className='note text-xs'>A little note</p> */}
+    <div className='h-screen text-white bg-slate-900'>
+      <div className='container px-2 '>
+        <div className='relative w-32 h-32 p-8 bg-red-500 rounded-lg'>
+          <div className='absolute w-24 h-24 bg-green-500 rounded-lg inset-2'></div>
+        </div>
+      </div>
+    
     </div>
   )
 }

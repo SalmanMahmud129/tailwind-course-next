@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // container: {
+    //   center: true
+    // },
     // replaces default sizes from tailwind when placed in them section
     // fontSize: {
     //   xs: '12px',
@@ -31,14 +34,14 @@ module.exports = {
     },
 
     //can be used for things like margin
-    spacing: {
-      '1': '8px',
-      '2': '12px',
-      '3': '16px',
-      '4': '24px',
-      '5': '32px',
-      '6': '48px',
-    },
+    // spacing: {
+    //   '1': '8px',
+    //   '2': '12px',
+    //   '3': '16px',
+    //   '4': '24px',
+    //   '5': '32px',
+    //   '6': '48px',
+    // },
 
 
     // colors: {
@@ -46,15 +49,15 @@ module.exports = {
     // }, if you put this colors object it will replace all the built in tailwind colors with ones that you put. If you add them to extend it wont replace
     extend: {
 
-      colors: {
-        vuejs: "#41f07e"
-      },
+      // colors: {
+      //   vuejs: "#41f07e"
+      // },
 
-      fontSize: {
-        xs: '12px',
-        sm: '15px',
-        base: '18px'
-      }
+      // fontSize: {
+      //   xs: '12px',
+      //   sm: '15px',
+      //   base: '18px'
+      // }
 
     },
   },
