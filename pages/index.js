@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from 'react';
 import { ArrowDown } from './arrowdown';
+import Header from '@/features/common/modules/Header';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
   }
   return (
     <div>
+      <Header />
       <h1>This is a title</h1>
       <h2>This is a subtitle</h2>
       <p className='text-base'>This is a paragraph</p>
