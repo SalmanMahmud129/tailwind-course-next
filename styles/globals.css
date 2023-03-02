@@ -6,9 +6,58 @@
 @tailwind utilities;
 
 
-@layer base{
-    html{
-        @apply text-black;
-        font-family: 'Shantell Sans', cursive;
+@layer base {
+    h1{
+        @apply mb-2 text-3xl font-bold;
     }
+    h2{
+        @apply mb-1 text-xl font-semibold;
+    }
+    a{
+        @apply underline text-blue-500 hover:text-purple-500 transition decoration-wavy underline-offset-4
+    }
+
+    .btn{
+        @apply rounded-lg px-4 py-2 text-white hover:transition hover:duration-300 hover:opacity-80 disabled:bg-slate-400/50 hover:disabled:opacity-100
+    }
+
+    /* .btn:hover{
+        @apply transition duration-300 opacity-80
+    } */
+
+    .btn-primary{
+        @apply bg-blue-500 hover:bg-blue-400 
+    }
+
+    .btn-secondary{
+        @apply bg-slate-800 
+    }
+
+    input[type='text']{
+        @apply disabled:bg-slate-100 outline-none border border-slate-700 rounded-sm p-1 placeholder:italic
+    }
+
+    input[type='date']{
+        @apply p-1 mb-1
+    }
+
+    select, input{
+        @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded outline-none
+    }
+
+    select{
+        @apply pr-3;
+    }
+    .Select{
+        @apply w-32 border border-slate-300 rounded outline-none inline-block pr-8 cursor-pointer ;
+    }
+
+    .Select .child{
+        @apply px-1 py-1
+    }
+
+    .Select ul li {
+        @apply hover:bg-slate-400
+    }
+
 }
